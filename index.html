@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Laralink">
+    <!-- Favicon Icon -->
+    <link rel="icon" href="assets/img/favicon.png">
+    <!-- Site Title -->
+    <title>Capital-Investment Forum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/odometer.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+    .packages {
+      padding: 100px 24px 80px;
+      background: #e8eaf0;
+    }
+
+    .packages__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .packages__grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 4rem;
+      align-items: start;
+      margin-bottom: 5rem;
+    }
+
+    /* ── Header ── */
+    .packages__header {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .packages__eyebrow {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #00accc;
+      margin-bottom: 14px;
+    }
+
+    .packages__heading {
+      font-size: 38px;
+      font-weight: 800;
+      color: #0d1f3c;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .packages__subheading {
+      font-size: 15px;
+      font-weight: 400;
+      color: #777;
+      line-height: 1.7;
+    }
+
+    /* ── Card ── */
+    .pkg-card {
+      background: #f4f5f8;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 40px;
+      position: relative;
+    }
+
+    .pkg-card__top {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      height: 0;
+      padding-right: 24px;
+    }
+
+    .pkg-card__icon {
+      width: 76px;
+      height: 76px;
+      border-radius: 12px;
+      background-image: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: -38px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 16px rgba(13, 110, 138, 0.25);
+    }
+
+    .pkg-card__icon svg {
+      width: 40px;
+      height: 40px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 1.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .pkg-card__body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 56px;
+      padding: 0 1.5rem;
+    }
+
+    .pkg-card__rate {
+      font-size: 56px;
+      font-weight: 800;
+      color: #00ACCC;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .pkg-card__name {
+      font-size: 14px;
+      font-weight: 800;
+      color: #004D6E;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    /* ── Info panel ── */
+    .pkg-card__info {
+      background: #004D6E;
+      width: 100%;
+      padding: 24px 28px 30px;
+      margin-bottom: 18px;
+      color: #fff;
+    }
+
+    .pkg-card__info-label {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+
+    .pkg-card__amounts-row {
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+    }
+
+    .pkg-card__amounts-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .pkg-card__amount {
+      font-size: 30px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+
+    .pkg-card__amount-tag {
+      font-size: 13px;
+      font-weight: 400;
+      color: #8ecdd4;
+    }
+
+    /* ── Referral ── */
+    .pkg-card__referral {
+      font-size: 13.5px;
+      color: #555;
+      text-align: center;
+      line-height: 1.75;
+      padding: 0 24px;
+      margin-bottom: 28px;
+    }
+
+    .pkg-card__referral b {
+      color: #0d1f3c;
+      font-weight: 700;
+    }
+
+    /* ── Button ── */
+    .pkg-card__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-image: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 15px 44px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+
+    .pkg-card__btn:hover {
+      background: #0a7585;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .pkg-card__btn svg {
+      width: 16px;
+      height: 16px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ANIMATIONS */
+    .animate {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    .fade-up {
+      animation-name: fadeUp;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* STAGGER DELAYS */
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.25s; }
+    .delay-3 { animation-delay: 0.4s; }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .packages__grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+      }
+
+      .pkg-card__rate {
+        font-size: 44px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="cs_preloader cs_accent_color cs_white_bg">
+      <div class="cs_preloader bg-white d-flex justify-content-center align-items-center">
+        <div class="cs_preloader_in">
+          <img src="assets/img/favicon.png" alt="Logo">
+        </div>
+      </div>
+    </div>
+    <!-- Start Header Section -->
+    <header class="cs_site_header cs_style_1 cs_sticky_header cs_site_header_full_width">
+      <div class="cs_top_header">
+        <div class="container">
+          <div class="cs_top_header_in">
+            <div class="cs_top_header_left">
+              <ul class="cs_top_nav d-flex flex-wrap align-items-center cs_fs_12 text-white m-0 p-0">
+                <li><b class="fw-medium text-white">Address:</b> 3517 W. Gray St. Utica, Pennsylvania 57867</li>
+                <li><a href="mailto:support@capital-investmentforum.com">support@capital-investmentforum.com</a></li>
+              </ul>
+            </div>
+            <div class="cs_top_header_right">
+              <ul class="cs_top_nav d-flex flex-wrap align-items-center cs_fs_12 text-white m-0 p-0">
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_main_header">
+        <div class="container">
+          <div class="cs_main_header_in">
+            <div class="cs_main_header_left">
+              <a class="cs_site_branding" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" style="width: 130px;" id="logo">
+              </a>
+              <div class="cs_nav cs_primary_font fw-medium">
+                <ul class="cs_nav_list fw-medium text-uppercase">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li><a href="about.html">Company</a></li>
+                  <li><a href="sectors.html">Sectors</a></li>
+                  <li><a href="packages.html">Packages</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="https://capital-investmentforum.com/public/login" target="_blank">Login</a></li>
+                  <li><a href="https://capital-investmentforum.com/public/register" target="_blank">Register</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_main_header_right">
+              <div class="cs_toolbox">
+                <div class="cs_hero_btn">
+                  <a href="https://capital-investmentforum.com/public/login" target="_blank" class="cs_btn cs_style_1 cs_fs_16 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Login</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+  
+    <!-- Start Hero -->
+    <section class="cs_hero_1-wrap position-relative cs_hero_slider bg-primary">
+      <div class="cs_swiper_parallax_slider_wrap">
+        <div class="cs_parallax_slider loading">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
+                <figure class="cs_swiper_parallax_bg" data-src="assets/img/hero_slider_1.jpeg">
+                  <img src="assets/img/hero_slider_1.jpeg" alt="Slider" class="cs_entity_img">
+                  <div style="background-color: #18191d;" class="opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
+                </figure>
+                <div class="container">
+                  <div class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
+                    <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">PRUDENT INVESTING</h2>
+                    <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
+                      Investing With Assurance <br>To Reap Benefits.
+                    </h1>
+                    <p class="text-white cs_mb_20">
+                      Our platform's goal is to provide you the confidence to invest by arming you with <br>  the knowledge and resources you need to successfully navigate the financial world<br>  and make wise decisions. 
+                    </p>
+                    <div class="cs_hero_btn">
+                      <a href="https://capital-investmentforum.com/public/register" target="_blank" class="cs_btn cs_style_1 cs_fs_16 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Register</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
+                <figure class="cs_swiper_parallax_bg" data-src="assets/img/hero_slider_2.jpeg">
+                  <img src="assets/img/hero_slider_2.jpeg" alt="Slider" class="cs_entity_img">
+                  <div class="bg-primary opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
+                </figure>
+                <div class="container">
+                  <div class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
+                    <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">FINANCIAL SUCCESS</h2>
+                    <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
+                      Our Mission Is Your<br> Financial Success
+                    </h1>
+                    <p class="text-white cs_mb_20">
+                      We offer educational materials and analysis to equip you with the knowledge  <br>required to successfully negotiate the intricacies of the financial world.
+                    </p>
+                    <div class="cs_hero_btn">
+                      <a href="https://capital-investmentforum.com/public/register" target="_blank" class="cs_btn cs_style_1 cs_fs_16 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Register</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cs_hero cs_style_1 d-flex align-items-center justify-content-center background-filled position-relative overflow-hidden">
+                <figure class="cs_swiper_parallax_bg" data-src="assets/img/hero_slider_3.jpeg">
+                  <img src="assets/img/hero_slider_3.jpeg" alt="Slider" class="cs_entity_img">
+                  <div style="background-color: rgb(22, 36, 62);" class="opacity-75 position-absolute w-100 h-100 start-0 top-0"></div>
+                </figure>
+                <div class="container">
+                  <div class="cs_hero_text position-relative cs_zindex_5 d-inline-block">
+                    <h2 class="text-white cs_mb_5 fw-normal cs_fs_18">TAILORED INVESTMENT</h2>
+                    <h1 class="text-white cs_mb_16 cs_fs_60 cs_fs_lg_46">
+                      Where Your Financial <br>Dreams Become Reality.
+                    </h1>
+                    <p class="text-white cs_mb_20">
+                      By developing a roadmap specifically for you, our individualized approach guarantees <br> that our solutions are in line with your  unique goals and desires. <br>
+                    </p>
+                    <div class="cs_hero_btn">
+                      <a href="https://capital-investmentforum.com/public/register" target="_blank" class="cs_btn cs_style_1 cs_fs_16 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Register</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="cs_slider_navigation d-flex cs_row_gap_15 flex-column position-absolute
+          cs_zindex_4">
+            <div class="cs_swiper_button_prev filter cs_height_45 cs_width_45 bg-white rounded-circle d-flex align-items-center justify-content-center bg-accent-hover cs_transition_4">
+              <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.461063 4.4077H19.538C19.7649 4.4077 19.9482 4.22437 19.9482 3.99745C19.9482 3.77052 19.7649 3.58719 19.538 3.58719H1.45209L3.94183 1.09745C4.10209 0.937189 4.10209 0.676933 3.94183 0.516677C3.78158 0.35642 3.52132 0.35642 3.36106 0.516677L0.170038 3.7077C0.0520878 3.82565 0.0174732 4.00129 0.0815754 4.15514C0.145678 4.3077 0.295677 4.4077 0.461063 4.4077Z" fill="black"/>
+                <path d="M3.65549 7.60253C3.76062 7.60253 3.86575 7.56278 3.94524 7.48202C4.10549 7.32176 4.10549 7.0615 3.94524 6.90125L0.750365 3.70637C0.590108 3.54612 0.329853 3.54612 0.169597 3.70637C0.00934029 3.86663 0.00934029 4.12689 0.169597 4.28714L3.36447 7.48202C3.44524 7.56278 3.55036 7.60253 3.65549 7.60253Z" fill="black"/>
+              </svg>             
+            </div>
+            <div class="cs_swiper_button_next filter cs_height_45 cs_width_45 bg-white rounded-circle d-flex align-items-center justify-content-center bg-accent-hover cs_transition_4">
+              <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5389 4.4077H0.462014C0.235091 4.4077 0.0517578 4.22437 0.0517578 3.99745C0.0517578 3.77052 0.235091 3.58719 0.462014 3.58719H18.5479L16.0582 1.09745C15.8979 0.937189 15.8979 0.676933 16.0582 0.516677C16.2184 0.35642 16.4787 0.35642 16.6389 0.516677L19.83 3.7077C19.9479 3.82565 19.9825 4.00129 19.9184 4.15514C19.8543 4.3077 19.7043 4.4077 19.5389 4.4077Z" fill="#18191D"/>
+                <path d="M16.3445 7.60253C16.2394 7.60253 16.1342 7.56278 16.0548 7.48202C15.8945 7.32176 15.8945 7.0615 16.0548 6.90125L19.2496 3.70637C19.4099 3.54612 19.6701 3.54612 19.8304 3.70637C19.9907 3.86663 19.9907 4.12689 19.8304 4.28714L16.6355 7.48202C16.5548 7.56278 16.4496 7.60253 16.3445 7.60253Z" fill="#18191D"/>
+              </svg>          
+            </div>
+          </div>
+          <div class="cs_hero_shape_2 position-absolute start-0 cs_zindex_1">
+            <svg width="572" height="572" viewBox="0 0 572 572" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M572 -6.10352e-05L6.10352e-05 572L1.10293e-05 -1.10293e-05L572 -6.10352e-05Z" fill="url(#paint0_linear_81_258)" fill-opacity="0.7"/>
+              <defs>
+              <linearGradient id="paint0_linear_81_258" x1="388.254" y1="307.69" x2="-127.973" y2="-227.83" gradientUnits="userSpaceOnUse">
+              <stop offset="0.0457759" stop-color="#004D6E" stop-opacity="0"/>
+              <stop offset="0.514455" stop-color="#00ACCC" stop-opacity="0.35"/>
+              </linearGradient>
+              </defs>
+            </svg>            
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- End Hero -->
+
+    <!-- Start About Section -->
+    <section class="cs_pt_135 cs_pt_lg_75 cs_pb_140 cs_pb_lg_80 position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 cs_mb_lg_55">
+            <div class="cs_experience cs_style_1 position-relative">
+              <div class="cs_experience_thumb">
+                <img src="assets/img/experience_img.jpg" alt="Thumb" class="position-relative cs_zindex_3 cs_rounded_15">
+                <div class="cs_experience_shape"><img src="assets/img/experience_shape_1.png" alt="Shape" class="moving_x"></div>
+              </div>
+              <div class="cs_experience_box background-filled text-center bg-white cs_rounded_10 position-absolute bottom-0 end-0 cs_zindex_3 d-flex flex-column justify-content-center align-items-center" data-src="assets/img/experience_bg.jpg">
+                <img src="assets/img/experience_icon.svg" alt="Icon" class="cs_mb_5">
+                <h3 class="text-white cs_fs_60 cs_fs_lg_46 fw-bold lh_1 mb-0 d-flex justify-content-between">
+                  <span data-count-to="25" class="odometer"></span>
+                  <span class="fw-light"></span>
+                </h3>
+                <h2 class="cs_fs_18 fw-normal text-white m-0">Years of Experience</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cs_about cs_style_1">
+              <div class="cs_section_heading cs_style_1 d-flex align-items-center cs_mb_15">
+                <div class="cs_section_heading_in">
+                  <h3 class="cs_fs_20 cs_fs_lg_18 text-accent fw-normal cs_lh_base cs_mb_10 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">About Us</h3>
+                  <h2 class="cs_fs_48 cs_fs_lg_36 cs_mb_20">Your Financial Path to Growth.</h2>
+                  <p class="m-0">At Capital-Investment Forum, we believe that smart investing should be accessible to everyone. With years of experience navigating global markets, our team of certified financial experts works closely with each client to craft personalized investment strategies that align with their unique goals, risk tolerance, and timeline.</p>
+                </div>
+              </div>
+              <div class="cs_progressbar cs_style_1 cs_mb_20">
+                <div class="cs_progressbar_heading d-flex justify-content-between align-items-center cs_mb_8">
+                  <h3 class="fw-medium m-0 cs_fs_18">Alternative Investments</h3>
+                  <p class="cs_fs_14 cs_lh_base m-0">82%</p>
+                </div>
+
+                <div class="cs_progress cs_rounded_8 overflow-hidden cs_mb_30" data-progress="82">
+                  <div class="cs_progress_in bg-accent cs_rounded_8 h-100 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s"></div>
+                </div>
+
+                <div class="cs_progressbar_heading d-flex justify-content-between align-items-center cs_mb_8">
+                  <h3 class="fw-medium m-0 cs_fs_18">Stock & Equities</h3>
+                  <p class="cs_fs_14 cs_lh_base m-0">95%</p>
+                </div>
+
+                <div class="cs_progress cs_rounded_8 overflow-hidden cs_mb_30" data-progress="95">
+                  <div class="cs_progress_in bg-accent cs_rounded_8 h-100 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s"></div>
+                </div>
+
+                <div class="cs_progressbar_heading d-flex justify-content-between align-items-center cs_mb_8">
+                  <h3 class="fw-medium m-0 cs_fs_18">Fixed Income & Bonds</h3>
+                  <p class="cs_fs_14 cs_lh_base m-0">88%</p>
+                </div>
+
+                <div class="cs_progress cs_rounded_8 overflow-hidden cs_mb_30" data-progress="88">
+                  <div class="cs_progress_in bg-accent cs_rounded_8 h-100 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s"></div>
+                </div>
+              </div><!-- .cs_progressbar -->
+              <div class="row cs_mb_15">
+                <div class="col-lg-6">
+                  <div class="cs_about-icon-box position-relative cs_mb_25">
+                    <span class="position-absolute cs_height_20 cs_width_20 top-0 start-0 cs_mt_5 bg-accent text-white cs_fs_10 d-flex align-items-center justify-content-center cs_rounded_30"><i class="fa-solid fa-angles-right"></i></span>
+                    <h3 class="cs_fs_16 cs_pl_35 cs_mb_12 cs_lh_lg">Stock & Equities</h3>
+                    <p class="m-0">We help you invest in high-performing stocks across global markets for maximum growth.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="cs_about-icon-box position-relative cs_mb_25">
+                    <span class="position-absolute cs_height_20 cs_width_20 top-0 start-0 cs_mt_5 bg-accent text-white cs_fs_10 d-flex align-items-center justify-content-center cs_rounded_30"><i class="fa-solid fa-angles-right"></i></span>
+                    <h3 class="cs_fs_16 cs_pl_35 cs_mb_12 cs_lh_lg">Bonds & Fixed Income</h3>
+                    <p class="m-0">Secure, steady returns through carefully selected government and corporate bond portfolios.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center cs_row_gap_20 cs_column_gap_30 cs_column_gap_lg_20 flex-wrap">
+                <a href="https://capital-investmentforum.com/public/register" target="_blank" class="cs_btn cs_style_1 cs_fs_16 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get Started</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_section_shape-1 position-absolute semi_rotate">
+        <img src="assets/img/favicon.png" alt="Logo" style="width: 120px; opacity: 0.3;">                
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Start Sectors Section -->
+    <section class="cs_pt_133 cs_pt_lg_75 cs_pb_133 cs_pb_lg_75">
+      <div class="container">
+        <div class="cs_service_slider cs_gap_24">
+          <div class="cs_section_heading cs_style_1 d-flex align-items-center cs_mb_60 cs_mb_lg_40 cs_column_gap_15 cs_row_gap_15">
+            <div class="cs_section_heading_in">
+              <h3 class="cs_fs_20 cs_fs_lg_18 text-accent fw-normal cs_lh_base cs_mb_10 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInLeft;">Our Sector Knowledge</h3>
+              <h2 class="cs_fs_48 cs_fs_lg_36 m-0">Invest to Dominate<br>Globally with Us</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <div class="cs_service cs_style_1 cs_pt_25 cs_pl_25 cs_pr_25 cs_pb_15 bg-white cs_transition_4 shadow cs_mb_25">
+              <div class="cs_service_iconbox d-flex align-items-center cs_mb_20">
+                <div class="cs_service_icon d-flex align-items-center justify-content-center cs_rounded_5 cs_mr_15 cs_transition_4 flex-none">                
+                  <img src="./assets/img/icons/icon-1.svg" alt="advice">
+                </div>
+                <h2 class="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><p class="inline-block">Renewable Energy</p></h2>
+              </div>
+              <p class="cs_mb_24">Invest in the vibrant and constantly changing energy sector to set off on a prosperous journey. Because there is a never-ending need for energy, this industry presents an alluring prospect for investors looking for strong returns. The energy sector, whether it be conventional fossil fuels or the rapidly expanding renewable energy space, can help you achieve financial success.</p>
+              <div class="cs_service_thumb position-relative cs_rounded_5">
+                <div class="cs_service_thumb-in position-relative-in background-filled h-100" data-src="assets/img/energy.jpg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="cs_service cs_style_1 cs_pt_25 cs_pl_25 cs_pr_25 cs_pb_15 bg-white cs_transition_4 shadow cs_mb_25">
+              <div class="cs_service_iconbox d-flex align-items-center cs_mb_20">
+                <div class="cs_service_icon d-flex align-items-center justify-content-center cs_rounded_5 cs_mr_15 cs_transition_4 flex-none">                
+                  <img src="./assets/img/icons/icon-1.svg" alt="advice">
+                </div>
+                <h2 class="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><p class="inline-block">Actual Property</p></h2>
+              </div>
+              <p class="cs_mb_24">Invest in the tangible and profitable world of real estate to increase your wealth and ensure long-term success. The combination of stability, income, and potential appreciation that real estate investments offer is distinct. Consider investing in real estate investment trusts (REITs) or holding rental properties for a more diversified strategy.</p>
+              <div class="cs_service_thumb position-relative cs_rounded_5">
+                <div class="cs_service_thumb-in position-relative-in background-filled h-100" data-src="assets/img/property.jpg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="cs_service cs_style_1 cs_pt_25 cs_pl_25 cs_pr_25 cs_pb_15 bg-white cs_transition_4 shadow cs_mb_25">
+              <div class="cs_service_iconbox d-flex align-items-center cs_mb_20">
+                <div class="cs_service_icon d-flex align-items-center justify-content-center cs_rounded_5 cs_mr_15 cs_transition_4 flex-none">
+                  <img src="./assets/img/icons/icon-3.svg" alt="tracking">               
+                </div>
+                <h2 class="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><p  class="inline-block">Crypto Indices</p></h2>
+              </div>
+              <p class="cs_mb_24">The question of whether it makes sense to invest in cryptocurrencies is open-ended due to the relatively new nature of the space and the market's historical volatility. In light of this, we discuss some advantages and disadvantages as well as some helpful but unprofessional advice.</p>
+              <div class="cs_service_thumb position-relative cs_rounded_5">
+                <div class="cs_service_thumb-in position-relative-in background-filled h-100" data-src="assets/img/crypto.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <div class="cs_service cs_style_1 cs_pt_25 cs_pl_25 cs_pr_25 cs_pb_15 bg-white cs_transition_4 shadow cs_mb_25">
+              <div class="cs_service_iconbox d-flex align-items-center cs_mb_20">
+                <div class="cs_service_icon d-flex align-items-center justify-content-center cs_rounded_5 cs_mr_15 cs_transition_4 flex-none">
+                  <img src="./assets/img/icons/icon-2.svg" alt="">             
+                </div>
+                <h2 class="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><p class="inline-block">Bonds</p></h2>
+              </div>
+              <p class="cs_mb_24">Make smart bond investments to dive into the world of stability and steady returns. Bonds shield your money from market fluctuations and offer a consistent stream of income. Investors looking to take a more cautious approach without sacrificing financial gains will find great success in this sector.</p>
+              <div class="cs_service_thumb position-relative cs_rounded_5">
+                <div class="cs_service_thumb-in position-relative-in background-filled h-100" data-src="assets/img/bonds.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Sectors Section -->
+
+    <!-- Start Why Choose Us -->
+    <section class="position-relative cs_iconbox_2_wrap cs_pt_135 cs_pt_lg_75 cs_pb_100 cs_pb_lg_40 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="position-relative cs_zindex_3">
+              <div class="cs_section_heading cs_style_1 d-flex align-items-center cs_mb_60 cs_mb_lg_40 cs_column_gap_15 cs_row_gap_15">
+                <div class="cs_section_heading_in">
+                  <h3 class="cs_fs_20 cs_fs_lg_18 text-accent fw-normal cs_lh_base cs_mb_10 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">Why Choose Us</h3>
+                  <h2 class="cs_fs_48 cs_fs_lg_36 cs_mb_20 text-white">We grow <span class="text-accent">your wealth — not just</span> manage it</h2>
+                  <p class="text-white m-0">We combine decades of financial expertise with cutting-edge market <br> intelligence to help individuals and businesses grow their wealth with<br>  confidence. Our client-first approach means every decision we make is aligned with your financial goals.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="cs_iconbox cs_style_1 d-flex align-items-center cs_mb_40">
+                    <div class="cs_iconbox_icon d-flex align-items-center justify-content-center cs_height_70 cs_width_70 cs_rounded_10 flex-none cs_mr_20 bg-accent cs_transition_4 wow zoomIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                      <img src="./assets/img/icons/people.png" alt="" style="width: 48px;">                               
+                    </div>
+                    <div>
+                      <h2 class="text-white m-0 cs_fs_20 cs_fs_lg_18 cs_lh_base">Seasoned Advisors</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="cs_iconbox cs_style_1 d-flex align-items-center cs_mb_40">
+                    <div class="cs_iconbox_icon d-flex align-items-center justify-content-center cs_height_70 cs_width_70 cs_rounded_10 flex-none cs_mr_20 bg-accent cs_transition_4 wow zoomIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                      <img src="./assets/img/icons/bar-graph.png" alt="" style="width: 48px;">                                                              
+                    </div>
+                    <div>
+                      <h2 class="text-white m-0 cs_fs_20 cs_fs_lg_18 cs_lh_base">Data-driven Strategies</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="cs_iconbox cs_style_1 d-flex align-items-center cs_mb_40">
+                    <div class="cs_iconbox_icon d-flex align-items-center justify-content-center cs_height_70 cs_width_70 cs_rounded_10 flex-none cs_mr_20 bg-accent cs_transition_4 wow zoomIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                      <img src="./assets/img/icons/portfolio.png" alt="" style="width: 48px;">                        
+                    </div>
+                    <div>
+                      <h2 class="text-white m-0 cs_fs_20 cs_fs_lg_18 cs_lh_base">Diversified Portfolios</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="cs_iconbox cs_style_1 d-flex align-items-center cs_mb_40">
+                    <div class="cs_iconbox_icon d-flex align-items-center justify-content-center cs_height_70 cs_width_70 cs_rounded_10 flex-none cs_mr_20 bg-accent cs_transition_4 wow zoomIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                      <img src="./assets/img/icons/report.png" alt="" style="width: 48px;">                                                            
+                    </div>
+                    <div>
+                      <h2 class="text-white m-0 cs_fs_20 cs_fs_lg_18 cs_lh_base">Transparent Reporting</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6"></div>
+        </div>
+      </div>
+      <div class="cs_iconbox_left-img position-absolute bottom-0 start-0 h-100 background-filled" data-src="assets/img/why_choose_us_left_img.jpeg"></div>
+      <div class="cs_iconbox_right-img position-absolute cs_zindex_1 bottom-0 end-0 background-filled" data-src="assets/img/why_choose_us_right_img.jpg"></div>
+      <div class="cs_iconbox_logo position-absolute semi_rotate">
+        <img src="assets/img/favicon.png" alt="Logo" style="width: 120px; opacity: 0.3;">       
+      </div>
+    </section>
+    <!-- End Why Choose Us -->
+
+    <!-- Start Packages Section -->
+    <section class="packages background-filled cs_pt_133 cs_pt_lg_75 cs_pb_140 cs_pb_lg_80 cs_gray_bg" data-src="assets/img/services_bg.png" style="background-image: url(&quot;assets/img/services_bg.png&quot;);">
+      <div class="packages__header animate fade-up">
+          <p class="packages__eyebrow">Our Packages</p>
+          <h2 class="packages__heading">Flexible Packages for Every Stage</h2>
+          <p class="packages__subheading">Choose a package that fits your business needs and scale with confidence.</p>
+        </div>
+
+      <div class="packages__inner">
+        <div class="packages__grid">
+
+          <!-- STARTER -->
+          <div class="pkg-card animate delay-1">
+            <div class="pkg-card__top">
+              <div class="pkg-card__icon">
+                <img src="./assets/img/icons/icon-2_white.svg">
+              </div>
+            </div>
+            <div class="pkg-card__body">
+              <p class="pkg-card__rate">3.50%</p>
+              <p class="pkg-card__name">Starter</p>
+              <div class="pkg-card__info">
+                <p class="pkg-card__info-label">Starting From:</p>
+                <div class="pkg-card__amounts-row">
+                  <div>
+                    <p class="pkg-card__amount">$1000</p>
+                    <p class="pkg-card__amount-tag">Minimum</p>
+                  </div>
+                  <div>
+                    <p class="pkg-card__amount">$4,999</p>
+                    <p class="pkg-card__amount-tag">Maximum</p>
+                  </div>
+                </div>
+              </div>
+              <p class="pkg-card__referral">You will get a Referral Bonus of <b>10%</b><br>when you refer new users.</p>
+              <a href="https://capital-investmentforum.com/public/register" target="_blank" class="pkg-card__btn">
+                Get Started
+                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- ENTHUSIAST -->
+          <div class="pkg-card animate delay-1">
+            <div class="pkg-card__top">
+              <div class="pkg-card__icon">
+                <img src="./assets/img/icons/icon-2_white.svg">
+              </div>
+            </div>
+            <div class="pkg-card__body">
+              <p class="pkg-card__rate">4%</p>
+              <p class="pkg-card__name">Enthusiast</p>
+              <div class="pkg-card__info">
+                <p class="pkg-card__info-label">Starting From:</p>
+                <div class="pkg-card__amounts-col">
+                  <div>
+                    <p class="pkg-card__amount">$5,000</p>
+                    <p class="pkg-card__amount-tag">Minimum</p>
+                  </div>
+                  <div>
+                    <p class="pkg-card__amount">$14,999</p>
+                    <p class="pkg-card__amount-tag">Maximum</p>
+                  </div>
+                </div>
+              </div>
+              <p class="pkg-card__referral">You will get a Referral Bonus of <b>10%</b><br>when you refer new users.</p>
+              <a href="https://capital-investmentforum.com/public/register" target="_blank" class="pkg-card__btn">
+                Get Started
+                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- DIAMOND -->
+          <div class="pkg-card animate delay-1">
+            <div class="pkg-card__top">
+              <div class="pkg-card__icon">
+                <img src="./assets/img/icons/icon-2_white.svg">
+              </div>
+            </div>
+            <div class="pkg-card__body">
+              <p class="pkg-card__rate">4.50%</p>
+              <p class="pkg-card__name">Diamond</p>
+              <div class="pkg-card__info">
+                <p class="pkg-card__info-label">Starting From:</p>
+                <div class="pkg-card__amounts-col">
+                  <div>
+                    <p class="pkg-card__amount">$15,000</p>
+                    <p class="pkg-card__amount-tag">Minimum</p>
+                  </div>
+                  <div>
+                    <p class="pkg-card__amount">$34,999</p>
+                    <p class="pkg-card__amount-tag">Maximum</p>
+                  </div>
+                </div>
+              </div>
+              <p class="pkg-card__referral">You will get a Referral Bonus of <b>10%</b><br>when you refer new users.</p>
+              <a href="https://capital-investmentforum.com/public/register" target="_blank" class="pkg-card__btn">
+                Get Started
+                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- PROFESSIONAL -->
+          <div class="pkg-card animate delay-1">
+            <div class="pkg-card__top">
+              <div class="pkg-card__icon">
+                <img src="./assets/img/icons/icon-2_white.svg">
+              </div>
+            </div>
+            <div class="pkg-card__body">
+              <p class="pkg-card__rate">5.50%</p>
+              <p class="pkg-card__name">Vip</p>
+              <div class="pkg-card__info">
+                <p class="pkg-card__info-label">Starting From:</p>
+                <div class="pkg-card__amounts-col">
+                  <div>
+                    <p class="pkg-card__amount">$35,000</p>
+                    <p class="pkg-card__amount-tag">Minimum</p>
+                  </div>
+                  <div>
+                    <p class="pkg-card__amount">$49,999</p>
+                    <p class="pkg-card__amount-tag">Maximum</p>
+                  </div>
+                </div>
+              </div>
+              <p class="pkg-card__referral">You will get a Referral Bonus of <b>10%</b><br>when you refer new users.</p>
+              <a href="https://capital-investmentforum.com/public/register" target="_blank" class="pkg-card__btn">
+                Get Started
+                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- VIP -->
+          <div class="pkg-card animate delay-1">
+            <div class="pkg-card__top">
+              <div class="pkg-card__icon">
+                <img src="./assets/img/icons/icon-2_white.svg">
+              </div>
+            </div>
+            <div class="pkg-card__body">
+              <p class="pkg-card__rate">6.50%</p>
+              <p class="pkg-card__name">Vip</p>
+              <div class="pkg-card__info">
+                <p class="pkg-card__info-label">Starting From:</p>
+                <div class="pkg-card__amounts-col">
+                  <div>
+                    <p class="pkg-card__amount">$50,000</p>
+                    <p class="pkg-card__amount-tag">Minimum</p>
+                  </div>
+                  <div>
+                    <p class="pkg-card__amount">UNLIMITED</p>
+                    <p class="pkg-card__amount-tag">Maximum</p>
+                  </div>
+                </div>
+              </div>
+              <p class="pkg-card__referral">You will get a Referral Bonus of <b>10%</b><br>when you refer new users.</p>
+              <a href="https://capital-investmentforum.com/public/register" target="_blank" class="pkg-card__btn">
+                Get Started
+                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Packages Section -->
+
+    <!-- Start Our Approach Section -->
+    <section class="cs_pb_140 cs_pt_140 cs_pb_lg_80 cs_pt_lg_80 position-relative">
+      <div class="container">
+        <div class="row align-items-center cs_gap_y_40">
+          <div class="col-xxl-6 col-xl-6">
+            <div class="cs_experience cs_style_1 cs_type_1 position-relative">
+              <div class="cs_experience_thumb">
+                <img src="assets/img/investor.jpg" alt="Thumb" class="position-relative cs_zindex_3 cs_rounded_15">
+                <div class="cs_experience_shape"><img src="assets/img/experience_shape_1.png" alt="Shape" class="moving_x"></div>
+              </div>
+              <div class="cs_experience_box background-filled text-center bg-white cs_rounded_10 position-absolute cs_zindex_3 d-flex flex-column justify-content-center align-items-center" data-src="assets/img/graph.jpg" style="background-image: url(&quot;assets/img/experience_bg.jpeg&quot;);">
+                <img src="assets/img/experience_icon.svg" alt="Icon" class="cs_mb_5">
+                <h2 class="cs_fs_18 fw-normal text-white m-0">Trusted By</h2>
+                <h3 class="text-white cs_fs_60 cs_fs_lg_46 fw-bold lh_1 mb-0 d-flex justify-content-between">
+                  <span data-count-to="20" class="odometer odometer-auto-theme">
+                    <div class="odometer-inside">
+                      <span class="odometer-digit">
+                        <span class="odometer-digit-spacer">8</span>
+                        <span class="odometer-digit-inner">
+                          <span class="odometer-ribbon">
+                            <span class="odometer-ribbon-inner">
+                              <span class="odometer-value">2</span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="odometer-digit">
+                        <span class="odometer-digit-spacer">8</span>
+                        <span class="odometer-digit-inner">
+                          <span class="odometer-ribbon">
+                            <span class="odometer-ribbon-inner">
+                              <span class="odometer-value">0</span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </span>
+                  <span class="fw-light">K+</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 offset-xxl-1">
+            <div class="cs_about cs_style_1">
+              <div class="cs_section_heading cs_style_1 cs_mb_25">
+                <div class="cs_section_heading_in">
+                  <h3 class="cs_fs_20 text-accent fw-normal cs_lh_base wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInLeft;">Our Approach</h3>
+                  <h2 class="cs_fs_48 cs_fs_lg_36 cs_mb_20">Strategy is the key to
+                  <span class="text-accent">
+                  success</span></h2>
+                </div>
+              </div>
+              <div class="cs_mb_40">
+                <div class="cs_about_icon_box d-flex align-items-center cs_mb_30">
+                  <div class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 flex-none cs_mr_20 bg-gray rounded-circle">
+                    <img src="./assets/img/icons/icon-4.svg" alt="" style="width: 48px;">                                               
+                  </div>
+                  <div>
+                    <h2 class="cs_fs_20 cs_mb_8">Personalized Solutions</h2>
+                    <p class="m-0">We recognize that every financial journey is unique. Our tailored approach ensures solutions aligned with your goals, creating a personalized roadmap for success.</p>
+                  </div>
+                </div>
+                <div class="cs_about_icon_box d-flex align-items-center cs_mb_30">
+                  <div class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 flex-none cs_mr_20 bg-gray rounded-circle">
+                    <img src="./assets/img/icons/icon-5.svg" alt="" style="width: 48px;">    
+                  </div>
+                  <div>
+                    <h2 class="cs_fs_20 cs_mb_8">All-Inclusive Design</h2>
+                    <p class="m-0">Our team of financial experts helps you plan every aspect of your financial future. From retirement and wealth building to funding big projects, we guide you in making the right decisions.</p>
+                  </div>
+                </div>
+                <div class="cs_about_icon_box d-flex align-items-center cs_mb_30">
+                  <div class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 flex-none cs_mr_20 bg-gray rounded-circle">
+                    <img src="./assets/img/icons/icon-6.svg" alt="" style="width: 48px;">                                              
+                  </div>
+                  <div>
+                    <h2 class="cs_fs_20 cs_mb_8">Creative Portfolio Techniques</h2>
+                    <p class="m-0">Discover cutting-edge investing techniques built to reduce risks and maximize returns. We stay updated with industry trends to deliver solutions that complement your goals.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center cs_row_gap_20 cs_column_gap_30 cs_column_gap_lg_20 flex-wrap">
+                <a href="https://capital-investmentforum.com/public/register" class="cs_btn cs_style_1 cs_fs_16 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get Started</span></a>             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Our Approach Section -->
+
+    <!-- Start Testimonial Section -->
+    <section class="background-filled cs_pt_140 cs_pt_lg_75 cs_pb_135 cs_pb_lg_75" data-src="assets/img/testimonial_bg.jpeg">
+      <div class="cs_testimonial_slider cs_gap_30">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 cs_mb_lg_40">
+              <div class="cs_section_heading cs_style_1 d-flex align-items-center cs_mb_30">
+                <div class="cs_section_heading_in">
+                  <h3 class="cs_fs_20 cs_fs_lg_18 text-accent fw-normal cs_lh_base cs_mb_10 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">Testimonial</h3>
+                  <h2 class="cs_fs_48 cs_fs_lg_36 cs_mb_20">What our investors are saying</h2>
+                  <p class="m-0">Clients trust Capital-Investment Forum to grow and protect their wealth. Here's what some of them have to say about their experience.</p>
+                </div>
+              </div>
+              <div class="d-flex cs_column_gap_15">
+                <div class="cs_slider_prev filter cs_height_45 cs_width_45 bg-white rounded-circle d-flex align-items-center justify-content-center bg-accent-hover cs_transition_4">
+                  <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.461063 4.4077H19.538C19.7649 4.4077 19.9482 4.22437 19.9482 3.99745C19.9482 3.77052 19.7649 3.58719 19.538 3.58719H1.45209L3.94183 1.09745C4.10209 0.937189 4.10209 0.676933 3.94183 0.516677C3.78158 0.35642 3.52132 0.35642 3.36106 0.516677L0.170038 3.7077C0.0520878 3.82565 0.0174732 4.00129 0.0815754 4.15514C0.145678 4.3077 0.295677 4.4077 0.461063 4.4077Z" fill="black"/>
+                    <path d="M3.65549 7.60253C3.76062 7.60253 3.86575 7.56278 3.94524 7.48202C4.10549 7.32176 4.10549 7.0615 3.94524 6.90125L0.750365 3.70637C0.590108 3.54612 0.329853 3.54612 0.169597 3.70637C0.00934029 3.86663 0.00934029 4.12689 0.169597 4.28714L3.36447 7.48202C3.44524 7.56278 3.55036 7.60253 3.65549 7.60253Z" fill="black"/>
+                  </svg>             
+                </div>
+                <div class="cs_slider_next filter cs_height_45 cs_width_45 bg-white rounded-circle d-flex align-items-center justify-content-center bg-accent-hover cs_transition_4">
+                  <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5389 4.4077H0.462014C0.235091 4.4077 0.0517578 4.22437 0.0517578 3.99745C0.0517578 3.77052 0.235091 3.58719 0.462014 3.58719H18.5479L16.0582 1.09745C15.8979 0.937189 15.8979 0.676933 16.0582 0.516677C16.2184 0.35642 16.4787 0.35642 16.6389 0.516677L19.83 3.7077C19.9479 3.82565 19.9825 4.00129 19.9184 4.15514C19.8543 4.3077 19.7043 4.4077 19.5389 4.4077Z" fill="#18191D"/>
+                    <path d="M16.3445 7.60253C16.2394 7.60253 16.1342 7.56278 16.0548 7.48202C15.8945 7.32176 15.8945 7.0615 16.0548 6.90125L19.2496 3.70637C19.4099 3.54612 19.6701 3.54612 19.8304 3.70637C19.9907 3.86663 19.9907 4.12689 19.8304 4.28714L16.6355 7.48202C16.5548 7.56278 16.4496 7.60253 16.3445 7.60253Z" fill="#18191D"/>
+                  </svg>          
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="cs_slider_activate">
+                <div class="cs_slide">
+                  <div class="cs_testimonial cs_style_1 cs_pt_20">
+                    <div class="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
+                      <div class="cs_testimonial_img cs_mb_15"><img src="assets/img/darlene.jpg" alt="Avatar" class="cs_height_75 cs_width_75 rounded-circle"></div>
+                      <div class="cs_rating text-accent cs_mb_15" data-rating="4.5">
+                        <div class="cs_rating_percentage"></div>
+                      </div>
+                      <p class="cs_mb_14">Capital-Investment Forum transformed the way I think about investing. Their advisors helped me build a diversified portfolio that has consistently outperformed my expectations.</p>
+                      <h3 class="cs_fs_18 cs_mb_2 cs_lh_base">Darlene Robertson</h3>
+                      <p class="m-0 cs_fs_14 cs_lh_base">Portfolio Holder</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cs_slide">
+                  <div class="cs_testimonial cs_style_1 cs_pt_20">
+                    <div class="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
+                      <div class="cs_testimonial_img cs_mb_15"><img src="assets/img/carol.jpg" alt="Avatar" class="cs_height_75 cs_width_75 rounded-circle"></div>
+                      <div class="cs_rating text-accent cs_mb_15" data-rating="5">
+                        <div class="cs_rating_percentage"></div>
+                      </div>
+                      <p class="cs_mb_14">As a small business owner, I needed someone I could trust with my company's surplus funds. Capital-Investment Forum delivered a tailored strategy that gave me real, measurable returns.</p>
+                      <h3 class="cs_fs_18 cs_mb_2 cs_lh_base">Carol McCarthy</h3>
+                      <p class="m-0 cs_fs_14 cs_lh_base">Business Owner</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cs_slide">
+                  <div class="cs_testimonial cs_style_1 cs_pt_20">
+                    <div class="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
+                      <div class="cs_testimonial_img cs_mb_15"><img src="assets/img/peter.jpg" alt="Avatar" class="cs_height_75 cs_width_75 rounded-circle"></div>
+                      <div class="cs_rating text-accent cs_mb_15" data-rating="4">
+                        <div class="cs_rating_percentage"></div>
+                      </div>
+                      <p class="cs_mb_14">Retirement planning felt overwhelming until I found Capital-Investment Forum. Their team walked me through every step and I now have complete confidence in my financial future.</p>
+                      <h3 class="cs_fs_18 cs_mb_2 cs_lh_base">Peter Johnson</h3>
+                      <p class="m-0 cs_fs_14 cs_lh_base">Retired Professional</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cs_slide">
+                  <div class="cs_testimonial cs_style_1 cs_pt_20">
+                    <div class="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
+                      <div class="cs_testimonial_img cs_mb_15"><img src="assets/img/avatar_4.png" alt="Avatar" class="cs_height_75 cs_width_75 rounded-circle"></div>
+                      <div class="cs_rating text-accent cs_mb_15" data-rating="5">
+                        <div class="cs_rating_percentage"></div>
+                      </div>
+                      <p class="cs_mb_14">I had no experience with investing when I started. Capital-Investment Forum made the whole process simple, transparent, and genuinely rewarding. I've already referred three friends.</p>
+                      <h3 class="cs_fs_18 cs_mb_2 cs_lh_base">Max Lawrence</h3>
+                      <p class="m-0 cs_fs_14 cs_lh_base">First-time Investor</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cs_slide">
+                  <div class="cs_testimonial cs_style_1 cs_pt_20">
+                    <div class="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
+                      <div class="cs_testimonial_img cs_mb_15"><img src="assets/img/sarah.jpg" alt="Avatar" class="cs_height_75 cs_width_75 rounded-circle"></div>
+                      <div class="cs_rating text-accent cs_mb_15" data-rating="5">
+                        <div class="cs_rating_percentage"></div>
+                      </div>
+                      <p class="cs_mb_14">Capital-Investment Forum gave me the confidence to diversify beyond real estate into stocks and mutual funds. Their guidance has been invaluable and the returns speak for themselves.</p>
+                      <h3 class="cs_fs_18 cs_mb_2 cs_lh_base">Sarah Mitchell</h3>
+                      <p class="m-0 cs_fs_14 cs_lh_base">Real Estate Investor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonial Section -->
+
+    <!-- Start Contact Section  -->
+    <section class="background-filled overflow-hidden cs_pt_133 cs_pt_lg_75 cs_pb_140 cs_pb_lg_80" data-src="assets/img/cta_bg.jpeg">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-6">
+            <div class="cs_section_heading cs_style_1 d-flex align-items-center cs_mb_40">
+              <div class="cs_section_heading_in">
+                <h3 class="cs_fs_20 cs_fs_lg_18 text-accent fw-normal cs_lh_base cs_mb_10 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">Get In Touch</h3>
+                <h2 class="cs_fs_48 cs_fs_lg_36 cs_mb_20 text-white">Ready to start growing your wealth?</h2>
+                <p class="text-white m-0">Whether you're a first-time investor or looking to expand an existing portfolio, our team of financial advisors is here to help. Reach out today and take the first step toward your financial goals.</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center cs_mb_30">
+              <div class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 cs_height_lg_80 cs_width_lg-80 cs_rounded_10 flex-none cs_mr_20 bg-accent">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.6128 24.7786C30.7939 23.9259 29.8062 23.47 28.7593 23.47C27.7209 23.47 26.7247 23.9175 25.8721 24.7701L23.2043 27.4295C22.9848 27.3113 22.7653 27.2015 22.5543 27.0918C22.2503 26.9398 21.9633 26.7963 21.7185 26.6443C19.2196 25.0572 16.9486 22.9888 14.7705 20.3126C13.7152 18.9787 13.006 17.8559 12.4911 16.7162C13.1833 16.083 13.8249 15.4245 14.4497 14.7914C14.6861 14.555 14.9224 14.3102 15.1588 14.0738C16.9317 12.3009 16.9317 10.0046 15.1588 8.23172L12.8541 5.92698C12.5924 5.66527 12.3222 5.39512 12.0689 5.12497C11.5624 4.60155 11.0305 4.06124 10.4818 3.5547C9.6629 2.74425 8.6836 2.31369 7.65364 2.31369C6.62368 2.31369 5.62749 2.74425 4.78327 3.5547C4.77482 3.56315 4.77482 3.56315 4.76638 3.57159L1.89601 6.46729C0.815398 7.5479 0.199112 8.86489 0.0640356 10.3929C-0.138579 12.8581 0.587457 15.1544 1.14465 16.6571C2.5123 20.3464 4.55533 23.7655 7.60299 27.4295C11.3007 31.8448 15.7498 35.3314 20.832 37.7881C22.7738 38.7083 25.3655 39.7974 28.2612 39.9831C28.4385 39.9916 28.6242 40 28.7931 40C30.7433 40 32.3811 39.2993 33.6643 37.9063C33.6727 37.8894 33.6896 37.881 33.6981 37.8641C34.1371 37.3322 34.6436 36.851 35.1755 36.3361C35.5385 35.9899 35.9099 35.6269 36.2729 35.247C37.1087 34.3774 37.5477 33.3644 37.5477 32.326C37.5477 31.2791 37.1003 30.2745 36.2476 29.4303L31.6128 24.7786ZM34.6351 33.6683C34.6267 33.6683 34.6267 33.6767 34.6351 33.6683C34.3059 34.0229 33.9682 34.3437 33.6052 34.6983C33.0564 35.2217 32.4993 35.7704 31.9758 36.3867C31.1232 37.2985 30.1185 37.729 28.8015 37.729C28.6749 37.729 28.5398 37.729 28.4132 37.7206C25.9058 37.5602 23.5758 36.5809 21.8282 35.7451C17.0499 33.4319 12.8541 30.1479 9.36742 25.9858C6.48861 22.5161 4.56377 19.308 3.28898 15.8635C2.50385 13.7614 2.21682 12.1236 2.34345 10.5787C2.42787 9.59093 2.80777 8.77203 3.50848 8.07132L6.3873 5.19251C6.80097 4.80416 7.23997 4.5931 7.67052 4.5931C8.20239 4.5931 8.63294 4.91391 8.9031 5.18406C8.91154 5.19251 8.91998 5.20095 8.92842 5.20939C9.4434 5.6906 9.93305 6.18869 10.448 6.72056C10.7097 6.99071 10.9799 7.26086 11.25 7.53946L13.5548 9.8442C14.4497 10.7391 14.4497 11.5664 13.5548 12.4613C13.31 12.7061 13.0736 12.951 12.8288 13.1873C12.1196 13.9134 11.4442 14.5888 10.7097 15.2473C10.6929 15.2641 10.676 15.2726 10.6675 15.2895C9.9415 16.0155 10.0766 16.7247 10.2285 17.2059C10.237 17.2312 10.2454 17.2565 10.2539 17.2818C10.8533 18.7339 11.6975 20.1016 12.9807 21.7309L12.9892 21.7394C15.3192 24.6097 17.7759 26.8469 20.4859 28.5607C20.832 28.7802 21.1866 28.9575 21.5243 29.1264C21.8282 29.2783 22.1153 29.4218 22.3601 29.5738C22.3938 29.5907 22.4276 29.616 22.4614 29.6329C22.7484 29.7764 23.0186 29.8439 23.2972 29.8439C23.9979 29.8439 24.4369 29.4049 24.5804 29.2614L27.4677 26.3742C27.7547 26.0871 28.2106 25.741 28.7424 25.741C29.2659 25.741 29.6964 26.0702 29.9581 26.3573C29.9666 26.3657 29.9666 26.3657 29.975 26.3742L34.6267 31.0259C35.4963 31.887 35.4963 32.7734 34.6351 33.6683Z" fill="white"/>
+                  <path d="M21.6168 9.51496C23.8287 9.88642 25.838 10.9333 27.442 12.5373C29.046 14.1413 30.0844 16.1506 30.4643 18.3625C30.5572 18.9197 31.0384 19.308 31.5872 19.308C31.6547 19.308 31.7138 19.2996 31.7813 19.2911C32.4061 19.1898 32.8197 18.5989 32.7184 17.9741C32.2625 15.2979 30.9962 12.8581 29.0629 10.9248C27.1296 8.99154 24.6898 7.7252 22.0136 7.26932C21.3889 7.16801 20.8064 7.58168 20.6966 8.19797C20.5869 8.81425 20.9921 9.41365 21.6168 9.51496Z" fill="white"/>
+                  <path d="M39.9542 17.6449C39.2028 13.238 37.126 9.22793 33.9349 6.03675C30.7437 2.84557 26.7336 0.768768 22.3267 0.017406C21.7104 -0.0923436 21.1279 0.32977 21.0182 0.946056C20.9169 1.57078 21.3305 2.1533 21.9553 2.26305C25.8894 2.92999 29.4773 4.79573 32.3308 7.64078C35.1843 10.4943 37.0416 14.0822 37.7086 18.0163C37.8014 18.5735 38.2826 18.9619 38.8314 18.9619C38.8989 18.9619 38.958 18.9534 39.0256 18.945C39.6418 18.8521 40.0639 18.2612 39.9542 17.6449Z" fill="white"/>
+                </svg>                  
+              </div>
+              <div>
+                <p class="text-accent cs_mb_7">Have Any Question?</p>
+                <h2 class="text-white m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base">+ 070 4531 9507 </h2>
+              </div>
+            </div>
+            <div class="d-flex align-items-center cs_mb_30">
+              <div class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 cs_height_lg_80 cs_width_lg-80 cs_rounded_10 flex-none cs_mr_20 bg-accent">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M34.1388 5H5.86125C4.63868 5.00132 3.46656 5.48758 2.60207 6.35207C1.73758 7.21656 1.25132 8.38868 1.25 9.61125V30.3888C1.25132 31.6113 1.73758 32.7834 2.60207 33.6479C3.46656 34.5124 4.63868 34.9987 5.86125 35H34.1388C35.3613 34.9987 36.5334 34.5124 37.3979 33.6479C38.2624 32.7834 38.7487 31.6113 38.75 30.3888V9.61125C38.7487 8.38868 38.2624 7.21656 37.3979 6.35207C36.5334 5.48758 35.3613 5.00132 34.1388 5ZM5.86125 7.5H34.1388C34.6985 7.50066 35.2351 7.72331 35.6309 8.1191C36.0267 8.51489 36.2493 9.05151 36.25 9.61125V10.5675L20 21.0138L3.75 10.5675V9.61125C3.75066 9.05151 3.97331 8.51489 4.3691 8.1191C4.76489 7.72331 5.30151 7.50066 5.86125 7.5ZM34.1388 32.5H5.86125C5.30151 32.4993 4.76489 32.2767 4.3691 31.8809C3.97331 31.4851 3.75066 30.9485 3.75 30.3888V13.54L19.3237 23.5512C19.5254 23.681 19.7602 23.75 20 23.75C20.2398 23.75 20.4746 23.681 20.6763 23.5512L36.25 13.54V30.3888C36.2493 30.9485 36.0267 31.4851 35.6309 31.8809C35.2351 32.2767 34.6985 32.4993 34.1388 32.5Z" fill="white"/>
+                </svg>               
+              </div>
+              <div>
+                <p class="text-accent cs_mb_7">Send Email</p>
+                <h2 class="text-white m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base">support@capital-investmentforum.com</h2>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center justify-content-center cs_height_90 cs_width_90 cs_height_lg_80 cs_width_lg-80 cs_rounded_10 flex-none cs_mr_20 bg-accent">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.0002 0C12.0123 0 5.51367 6.49859 5.51367 14.4864C5.51367 24.3995 18.4777 38.9526 19.0296 39.5673C19.548 40.1447 20.4532 40.1437 20.9707 39.5673C21.5227 38.9526 34.4866 24.3995 34.4866 14.4864C34.4865 6.49859 27.988 0 20.0002 0ZM20.0002 36.6976C15.6371 31.5149 8.12242 21.29 8.12242 14.4866C8.12242 7.93703 13.4507 2.60875 20.0002 2.60875C26.5496 2.60875 31.8779 7.93703 31.8779 14.4865C31.8778 21.2902 24.3643 31.5133 20.0002 36.6976Z" fill="white"/>
+                  <path d="M20.0004 7.19797C15.9814 7.19797 12.7119 10.4676 12.7119 14.4865C12.7119 18.5054 15.9815 21.775 20.0004 21.775C24.0192 21.775 27.2887 18.5054 27.2887 14.4865C27.2887 10.4676 24.0192 7.19797 20.0004 7.19797ZM20.0004 19.1662C17.4199 19.1662 15.3207 17.067 15.3207 14.4865C15.3207 11.906 17.42 9.80672 20.0004 9.80672C22.5807 9.80672 24.68 11.906 24.68 14.4865C24.68 17.067 22.5807 19.1662 20.0004 19.1662Z" fill="white"/>
+                </svg>                              
+              </div>
+              <div>
+                <p class="text-accent cs_mb_7">Address</p>
+                <h2 class="text-white m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base">Yewtree Cottage, Kings Pyon, <br>HR4 8PZ</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6 offset-xl-1 cs_mt_lg_55">
+            <div class="cs_contact_wrap position-relative">
+              <form action="#" class="cs_contact_form bg-white cs_pt_64 cs_pl_80 cs_pr_80 cs_pb_80 cs_pl_lg_30 cs_pr_lg_30 position-relative cs_rounded_20" data-src="assets/img/contact_bg_pattern.svg">
+                <div class="cs_section_heading cs_style_1 d-flex align-items-center text-center cs_mb_30">
+                  <div class="cs_section_heading_in">
+                    <h2 class="cs_fs_48 cs_fs_lg_36 m-0">Contact Us</h2>
+                  </div>
+                </div>
+                <input class="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_15 bg-gray" type="text" placeholder="Your Name">
+                <input class="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_15 bg-gray" type="email" placeholder="Your Email">
+                <textarea class="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_30 bg-gray" placeholder="Message here ..." cols="30" rows="4"></textarea>
+                <a href="mailto:support@capital-investmentforum.com" class="cs_btn cs_style_1 cs_fs_16 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden">
+                  <span>Submit Now</span>
+                </a>
+              </form>
+              <div class="cs_contact_image d-none d-xl-block wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.4s"><img src="assets/img/contact_img_1.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section  -->
+
+    <!-- Start Footer -->
+    <footer class="cs_footer background-filled text-white" data-src="assets/img/footer_bg.jpeg">
+      <div class="container">
+        <div class="cs_footer_top d-flex justify-content-between align-items-start align-items-md-center cs_pt_46 cs_pb_46 cs_column_gap_15 cs_row_gap_15 flex-md-row  flex-column">
+          <div class="cs_footer_contact_info">
+            <h3 class="text-accent fw-normal cs_mb_4 cs_fs_16 cs_lh_lg">Have Any Question?</h3>
+            <h2 class="text-white fw-medium m-0 cs_fs_22">+ 070 4531 9507 </h2>
+          </div>
+          <div class="cs_footer_logo wow zoomIn" data-wow-duration="0.8s" data-wow-delay="0.2s"><img src="assets/img/logo.png" alt="Logo" style="width: 130px;"></div>
+          <div class="cs_footer_contact_info">
+            <h3 class="text-accent fw-normal cs_mb_4 cs_fs_16 cs_lh_lg">Send Email</h3>
+            <h2 class="text-white fw-medium m-0 cs_fs_22"><a href="mailto:support@capital-investmentforum.com">support@capital-investmentforum.com</a></h2>
+          </div>
+        </div>
+        <div class="cs_footer_main cs_pt_30 cs_pb_30">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="cs_footer_item cs_pt_20 cs_pb_20">
+                <div class="cs_text_widget">
+                  <p>Founded in 2005, Capital-Investment Forum is one of the most Experienced Global private equity firms. We have established a team investment professionals, focused on buyouts and growth equity investments.</p>
+                </div>
+                <div class="cs_social_btns d-flex flex-wrap cs_column_gap_15 cs_row_gap_15 cs_transition_5">
+                  <a href="#" class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" class="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i class="fa-brands fa-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1">
+              <div class="cs_footer_item cs_pt_20 cs_pb_20">
+                <h2 class="cs_widget_title text-white cs_fs_22 cs_mb_22">Explore</h2>
+                <ul class="cs_menu_widget text-uppercase">
+                  <li><a href="about.html">Company</a></li>
+                  <li><a href="sectors.html">Sectors</a></li>
+                  <li><a href="packages.html">Packages</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="cs_footer_item cs_pt_20 cs_pb_20">
+                <div class="cs_newsletter cs_style_1">
+                  <h2 class="cs_newsletter_title text-white cs_fs_22 cs_mb_9">Newsletter</h2>
+                  <p class="cs_newsletter_subtitle cs_mb_26">Get the latest market insights and investment opportunities delivered directly to your inbox every week.</p>
+                  <form action="#" class="cs_newsletter_form position-relative">
+                    <input type="email" class="cs_newsletter_input text-white cs_fs_14 cs_rounded_5 border-0 w-100 cs_pt_10" placeholder="Enter your mail">
+                    <button class="cs_newsletter_btn cs_fs_14 cs_rounded_5 cs_transition_4 bg-accent position-absolute text-uppercase">
+                      <span>Go</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="d-flex justify-content-between align-items-start align-items-md-center cs_pt_46 cs_pb_46 cs_column_gap_15 cs_row_gap_15 flex-md-row  flex-column" style="border-top: 1px solid #353535;">
+          <div class="cs_footer_contact_info">
+            <p class="text-white m-0 cs_fs_16" style="font-weight: 500 !important;"><a href="cookie.html">Cookie Policy</a></p>
+          </div>
+          <div class="cs_footer_contact_info">
+            <p class="text-white m-0 cs_fs_16" style="font-weight: 500 !important;"><a href="legal.html">Legal Notice</a></p>
+          </div>
+          <div class="cs_footer_contact_info">
+            <p class="text-white m-0 cs_fs_16" style="font-weight: 500 !important;"><a href="privacy.html">Privacy Policy</a></p>
+          </div>
+          <div class="cs_footer_contact_info">
+            <p class="text-white m-0 cs_fs_16" style="font-weight: 500 !important;"><a href="security.html">Security Policy</a></p>
+          </div>
+          <div class="cs_footer_contact_info">
+            <p class="text-white m-0 cs_fs_16" style="font-weight: 500 !important;"><a href="fraud.html">Fraud Detection</a></p>
+          </div>
+          <div class="cs_footer_contact_info">
+            <p class="text-white m-0 cs_fs_16" style="font-weight: 500 !important;"><a href="terms.html">Terms Of Use</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs_copyright text-center cs_fs_124 cs_lh_lg cs_pt_36 cs_pb_36">
+        <div class="container">
+          <p class="m-0">Copyright © 2026 <a href="index.html">Capital-Investment Forum</a>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Script -->
+    <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkg.min.js"></script>
+    <script src="assets/js/plugins/jquery.slick.min.js"></script>
+    <script src="assets/js/plugins/odometer.js"></script>
+    <script src="assets/js/plugins/ripples.min.js"></script>
+    <script src="assets/js/plugins/wow.min.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
